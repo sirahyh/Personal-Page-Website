@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+
+    <!-- Bootatrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <a href="#" class="logo"><img src="img/my_logo.png" alt="" /></a>
+      <div class="navigation">
+        <ul class="menu">
+          <div class="close-btn"></div>
+          <li class="menu-item"><a href="#about">Tentang</a></li>
+          <li class="menu-item">
+            <a href="#" class="sub-btn"
+              >Pengalaman <i class="fas fa-angle-down"></i
+            ></a>
+            <ul class="sub-menu">
+              <li class="sub-item"><a href="#experience">Kerja</a></li>
+              <li class="sub-item"><a href="#experience">Organisasi</a></li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="#education" class="sub-btn"
+              >Pendidikan <i class="fas fa-angle-down"></i
+            ></a>
+            <ul class="sub-menu">
+              <li class="sub-item">
+                <a href="https://www.sekolahathirah.sch.id/">SD</a>
+              </li>
+              <li class="sub-item">
+                <a href="https://www.sekolahathirah.sch.id/">SMP</a>
+              </li>
+              <li class="sub-item">
+                <a href="https://www.sekolahathirah.sch.id/">SMA</a>
+              </li>
+              <li class="sub-item more">
+                <a class="more-btn" href="#"
+                  >Kuliah <i class="fas fa-angle-right"></i
+                ></a>
+                <ul class="more-menu">
+                  <li class="more-item">
+                    <a href="https://www.unhas.ac.id/">Universitas</a>
+                  </li>
+                  <li class="more-item">
+                    <a href="https://eng.unhas.ac.id/informatics/en"
+                      >Departemen</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item"><a href="#projects">Projek</a></li>
+          <li class="menu-item"><a href="#footer">Kontak</a></li>
+        </ul>
+      </div>
+      <div class="menu-btn"></div>
+    </header>
+
+
+    <section id="profile">
+      <div class="section__pic-container" id="image-container">
+        <img src="./img/foto1.jpg" alt="Sitti Rahma profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello</p>
+        <h1 class="title">Sitti Rahma</h1>
+        <p class="section__text__p2">Website Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/my-resume.pdf')">
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/sitti-rahma-9b719921b/'" />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="section__text__p1">Kenal Lebih Jauh</p>
+      <h1 class="title">Tentang Saya</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./img/foto3.jpg" alt="Profile picture" class="about-pic" />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon" />
+              <h3>Pengalaman</h3>
+              <p>1+ tahun <br />Website Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon" />
+              <h3>Pendidikan</h3>
+              <p>
+                S1 Teknik Informatika <br />
+                Universitas Hasanuddin
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Mahasiswa teknik informatika dengan pengetahuan pemrograman dan
+              minat yang tinggi dalam pemrograman website. Telah menyelesaikan
+              beberapa proyek web dan terus berusaha meningkatkan keterampilan
+              pengembangan web. Juga dikenal sebagai mahasiswa yang tekun,
+              memiliki kemampuan untuk memotivasi orang lain, terorganisir, dan
+              berstruktur.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="konten">
+        <div class="left-bar">
+      
+          <section id="education">
+            <p class="section__text__p1">Latar Belakang</p>
+            <h1 class="title">Pendidikan</h1>
+      
+            <div class="slider-container">
+              <div class="slider">
+                <div class="slide">
+                  <img src="img/kuliah.jpg" alt="Gambar 1">
+                  <div class="caption">Universitas Hasanuddin</div>
+                </div>
+                <div class="slide">
+                  <img src="img/teknik.jpg" alt="Gambar 1">
+                  <div class="caption">Fakultas Teknik</div>
+              </div>
+                  <div class="slide">
+                      <img src="img/sma.jpg" alt="Gambar 1">
+                      <div class="caption">SMA Islam Athirah Bone</div>
+                  </div>
+                  <div class="slide">
+                      <img src="img/smp.jpg" alt="Gambar 2">
+                      <div class="caption">SMP Negeri 2 Barebbo</div>
+                  </div>
+                  <div class="slide">
+                      <img src="img/sd.jpg" alt="Gambar 3">
+                      <div class="caption">SD Inpress 3/77 Watu</div>
+                  </div>
+              </div>
+              <div class="indicators">
+                <span class="indicator" onclick="goToSlide(0)"></span>
+                <span class="indicator" onclick="goToSlide(1)"></span>
+                <span class="indicator" onclick="goToSlide(2)"></span>
+                <span class="indicator" onclick="goToSlide(3)"></span>
+                <span class="indicator" onclick="goToSlide(4)"></span>
+            </div>
+            
+            </div>
+          </section>
+      
+          <section id="experience">
+            <p class="section__text__p1">Explore My</p>
+            <h1 class="title">Pengalaman</h1>
+            <div class="experience-details-container">
+              <div class="about-containers">
+                <div class="details-container">
+                  <h2 class="experience-sub-title">Kerja</h2>
+                  <div class="article-container">
+                    <article>
+                      <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon" />
+                      <div>
+                        <h3>PT. AERO Nusantara Teknologi</h3>
+                        <p>Developer</p>
+                      </div>
+                    </article>
+                    <article>
+                      <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon" />
+                      <div>
+                        <h3>Dinas Kominfo</h3>
+                        <p>Website Developer</p>
+                      </div>
+                    </article>
+                    <article>
+                      <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon" />
+                      <div>
+                        <h3>Virtual Course</h3>
+                        <p>Tutor</p>
+                      </div>
+                    </article>
+                    <article>
+                      <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon" />
+                      <div>
+                        <h3>CoLearn</h3>
+                        <p>Video Solution Maker</p>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <div class="details-container">
+                  <h2 class="experience-sub-title">Organisasi/Skill</h2>
+                  <div class="article-container">
+                    <article>
+                      <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon" />
+                      <div>
+                        <h3>Peer Mentor</h3>
+                        <p>Mentor</p>
+                      </div>
+                    </article>
+                    <article>
+                      <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon" />
+                      <div>
+                        <h3>Coder Institude</h3>
+                        <p>Member</p>
+                      </div>
+                    </article>
+                    <article>
+                      <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon" />
+                      <div>
+                        <h3>Git</h3>
+                        <p>Experienced</p>
+                      </div>
+                    </article>
+                    <article>
+                      <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon" />
+                      <div>
+                        <h3>HTML/CSS</h3>
+                        <p>Experiented</p>
+                      </div>
+                    </article>
+                    <article>
+                      <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon" />
+                      <div>
+                        <h3>Javascript</h3>
+                        <p>Experiented</p>
+                      </div>
+                    </article>
+                    <article>
+                      <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon" />
+                      <div>
+                        <h3>Kotlin</h3>
+                        <p>Intermediate</p>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+          </section>
+      
+          <section id="projects">
+            <p class="section__text__p1">Portofolio</p>
+            <h1 class="title">Projek</h1>
+            <div class="experience-details-container">
+              <div class="about-containers">
+                <div class="details-container color-container">
+                  <div class="article-container">
+                    <img
+                      src="./img/projek_mouvee.png"
+                      alt="Project 1"
+                      class="project-img" />
+                  </div>
+                  <h2 class="experience-sub-title project-title">Mouveeidn</h2>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="window.open('https://github.com/sirahyh/sablon-baju-web', '_blank')">
+                      Github
+                    </button>
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="window.open('https://www.mouveeidn.com/', '_blank')">
+                      Link Web
+                    </button>
+                  </div>
+                </div>
+                <div class="details-container color-container">
+                  <div class="article-container">
+                    <img
+                      src="./img/projek_lalin.png"
+                      alt="Project 2"
+                      class="project-img" />
+                  </div>
+                  <h2 class="experience-sub-title project-title">Lalin Makassar</h2>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="window.open('https://github.com/sirahyh/WebsiteLalinMakassar', '_blank')">
+                      Github
+                    </button>
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="window.open('https://lalin.makassarkota.go.id/', '_blank')">
+                      Link Web
+                    </button>
+                  </div>
+                </div>
+                <div class="details-container color-container">
+                  <div class="article-container">
+                    <img
+                      src="./img/projek_tonasa.png"
+                      alt="Project 3"
+                      class="project-img" />
+                  </div>
+                  <h2 class="experience-sub-title project-title">
+                    Unit Konstruksi Tonasa
+                  </h2>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="window.open('https://github.com/Project-Website-Tonasa/Frontend-Website', '_blank')">
+                      Github
+                    </button>
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="window.open('https://unitworkshopst.com/', '_blank')">
+                      Link Web
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </section>
+
+          <section class="galery">
+            <div class="container">
+              <div class="heading">
+                <h3>Galeri <span>Foto</span></h3>
+              </div>
+              <div class="box">
+
+                <div class="dream">
+                  <img src="" alt="">
+                </div>
+              </div>
+            </div>
+          </section>
+      
+          <!-- AJAX IMPLEMENTATION -->
+         <div class="AjaxButton">
+            <div id="bottom-section">
+              <!-- Konten lain di bagian bawah halaman -->
+              <button id="ajaxButton">Klik untuk Mengambil Data</button>
+              <div id="resultText"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-bar">
+          <div class="articles">
+            <p class="section__text__p1">Minat</p>
+            <h1 class="title">Artikel</h1>
+
+            <div class="pilihan-artikel">
+              <h4>Life Lessons</h4>
+              <p><span>#1 </span><a href="https://jamesclear.com/saying-no" target="_blank"> The Ultimate Productivity Hack is Saying No</a></p>
+              <p><span>#2 </span><a href="https://jamesclear.com/luck-vs-hard-work" target="_blank">Absolute Success is Luck. Relative Success is Hard Work.</a></p>
+              <p><span>#3 </span><a href="https://jamesclear.com/shadow-side" target="_blank">The Shadow Side of Greatness</a></p>
+              <p><span>#4 </span><a href="https://jamesclear.com/personal-values-journal" target="_blank">One Research-Backed Way to Effectively Manage Your Stressful and Busy Schedule</a></p>
+              <p><span>#5 </span><a href="https://jamesclear.com/giving-up" target="_blank">What I Do When I Feel Like Giving Up</a></p>              
+              
+            </div>
+
+            <img src="img/lifelesson-banner.jpg" alt="">
+
+            <div class="pilihan-artikel">
+              <h4>Habits</h4>
+              <p><span>#1 </span><a href="https://jamesclear.com/one-sentence-habits" target="_blank"> 30 One-Sentence Stories From People Who Have Built Better Habits</a></p>
+              <p><span>#2 </span><a href="https://jamesclear.com/behavior-change-paradox" target="_blank">The Paradox of Behavior Change</a></p>
+              <p><span>#3 </span><a href="https://jamesclear.com/temptation-bundling" target="_blank">How to Stop Procrastinating and Boost Your Willpower by Using “Temptation Bundling”</a></p>
+              <p><span>#4 </span><a href="https://jamesclear.com/habits-fail" target="_blank">5 Common Mistakes That Cause New Habits to Fail</a></p>
+              <p><span>#5 </span><a href="https://jamesclear.com/stay-focused" target="_blank">How to Stay Focused When You Get Bored Working Toward Your Goals</a></p>              
+              
+            </div>
+
+            <img src="img/banner-james2.png" alt="">
+
+            <div class="pilihan-artikel">
+              <h4>Habits</h4>
+              <p><span>#1 </span><a href="https://jamesclear.com/beginners-guide-deliberate-practice" target="_blank"> The Beginner Guide to Deliberate Practice</a></p>
+              <p><span>#2 </span><a href="https://jamesclear.com/master-one-thing" target="_blank">The Scientific Argument for Mastering One Thing at a Time</a></p>
+              <p><span>#3 </span><a href="https://jamesclear.com/repeated-bout-effect" target="_blank">If Nothing Changes, Nothing Is Going to Change</a></p>
+              <p><span>#4 </span><a href="https://jamesclear.com/treasure-hunt" target="_blank">The Goal is Not the Point</a></p>
+              <p><span>#5 </span><a href="https://jamesclear.com/plan-failure" target="_blank">Plan For Failure: Being Consistent Is Not the Same as Being Perfect</a></p>              
+              
+            </div>
+
+            <img src="img/ban-self-improvement.jpg" alt="">
+
+            <div class="pilihan-artikel">
+              <h4>Life Lessons</h4>
+              <p><span>#1 </span><a href="https://jamesclear.com/saying-no" target="_blank"> The Ultimate Productivity Hack is Saying No</a></p>
+              <p><span>#2 </span><a href="https://jamesclear.com/luck-vs-hard-work" target="_blank">Absolute Success is Luck. Relative Success is Hard Work.</a></p>
+              <p><span>#3 </span><a href="https://jamesclear.com/shadow-side" target="_blank">The Shadow Side of Greatness</a></p>
+              <p><span>#4 </span><a href="https://jamesclear.com/personal-values-journal" target="_blank">One Research-Backed Way to Effectively Manage Your Stressful and Busy Schedule</a></p>
+              <p><span>#5 </span><a href="https://jamesclear.com/giving-up" target="_blank">What I Do When I Feel Like Giving Up</a></p>              
+              
+            </div>
+          </div>
+         
+        </div>
+    </div>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+      <footer class="footer-distributed" id="footer">
+        <div class="footer-left">
+          <img src="img/my_logo.png" alt="" />
+          <p class="footer-links">
+            <a href="#" class="link-1">Tentang</a>
+
+            <a href="#">Pengalaman</a>
+
+            <a href="#">Pricing</a>
+
+            <a href="#">Pendidikan</a>
+
+            <a href="#">Projek</a>
+
+            <a href="#">Kontak</a>
+          </p>
+        </div>
+
+        <div class="footer-center">
+          <div>
+            <i class="fa fa-map-marker"></i>
+            <p>
+              <span>Jalan Mahoni, Romanglompoa</span> Gowa, Sulawesi Selatan
+            </p>
+          </div>
+
+          <div>
+            <i class="fa fa-phone"></i>
+            <p>+62 823-4982-2624</p>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <p class="footer-company-about">
+            <span>Sosial Media</span>
+          </p>
+
+          <div class="email">
+            <i class="fa fa-envelope"></i>
+            <p>
+              <a href="mailto:support@company.com">rahma@fairtech.com.sg</a>
+            </p>
+          </div>
+
+          <div class="footer-icons">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+            <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+          </div>
+        </div>
+
+
+      </footer>
+      <!-- <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p> -->
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="resources/jquery.dropotron-1.0.js"></script>
+    <script
+      type="text/javascript"
+      src="resources/jquery.slidertron-1.1.js"></script> -->
+
+
+    <script>
+      $(document).ready(function () {
+        $(".sub-btn").click(function () {
+          $(this).next(".sub-menu").slideToggle();
+        });
+
+        // toggle more-menu
+        $(".more-btn").click(function () {
+          $(this).next(".more-menu").slideToggle();
+        });
+      });
+
+      // Javascript for responsive
+      var menu = document.querySelector(".menu");
+      var menuBtn = document.querySelector(".menu-btn");
+      var closeBtn = document.querySelector(".close-btn");
+
+      menuBtn.addEventListener("click", () => {
+        menu.classList.add("active");
+      });
+
+      closeBtn.addEventListener("click", () => {
+        menu.classList.remove("active");
+      });
+    </script>
+  </body>
+</html>
