@@ -33,6 +33,21 @@ const addSertif = (req, res) => {
     })
 }
 
+const putSertif = (req, res) => {
+    const id = parseInt(req.params.id);
+    const {penghargaan, tahun, penyelenggara, kredensial, kategori} = req.body;
+
+    pool.query(queries.checkIdSertifikat, [id], (error, results) => {
+        if (results.rows.length) {
+            pool.query(queries.editSertif, [penghargaan, tahun, penyelenggara, kredensial, kategori], () => {
+                res.status(201).send("Sertifikat berhasil diperbaharui")
+            })
+        } else {
+            res.send("Sertifikat tidak ditemukan")
+        }
+    })
+}
+
 const removeSertif = (req, res) => {
     const id = parseInt(req.params.id);
 
@@ -48,5 +63,5 @@ const removeSertif = (req, res) => {
 }
 
 module.exports = {
-    getSertif, getSertifById, addSertif, removeSertif
+    getSertif, getSertifById, addSertif, removeSertif, putSertif
 }
