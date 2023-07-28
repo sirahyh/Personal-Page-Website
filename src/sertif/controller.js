@@ -39,7 +39,7 @@ const putSertif = (req, res) => {
 
     pool.query(queries.checkIdSertifikat, [id], (error, results) => {
         if (results.rows.length) {
-            pool.query(queries.editSertif, [penghargaan, tahun, penyelenggara, kredensial, kategori], () => {
+            pool.query(queries.editSertif, [penghargaan, tahun, penyelenggara, kredensial, kategori, id], () => {
                 res.status(201).send("Sertifikat berhasil diperbaharui")
             })
         } else {
