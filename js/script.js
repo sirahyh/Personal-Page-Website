@@ -22,22 +22,22 @@ $(function() {
 });
 
 // AJAX Implementation
-document.getElementById("ajaxButton").addEventListener("click", function() {
-    var xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4) {
-            if (xhr.status === 200) {
-                var response = JSON.parse(xhr.responseText);
-                // Tampilkan respons JSON di bawah tombol
-                document.getElementById("resultText").innerText = JSON.stringify(response, null, 2);
-            } else {
-                document.getElementById("resultText").innerText = "Gagal mengambil data dari API Reddit.";
-            }
-        }
-    };
-    xhr.open("GET", "https://www.gov.uk/bank-holidays.json", true);
-    xhr.send();
-});
+// document.getElementById("ajaxButton").addEventListener("click", function() {
+//     var xhr = new XMLHttpRequest();
+//     xhr.onreadystatechange = function() {
+//         if (xhr.readyState === 4) {
+//             if (xhr.status === 200) {
+//                 var response = JSON.parse(xhr.responseText);
+//                 // Tampilkan respons JSON di bawah tombol
+//                 document.getElementById("resultText").innerText = JSON.stringify(response, null, 2);
+//             } else {
+//                 document.getElementById("resultText").innerText = "Gagal mengambil data dari API Reddit.";
+//             }
+//         }
+//     };
+//     xhr.open("GET", "https://www.gov.uk/bank-holidays.json", true);
+//     xhr.send();
+// });
 
 // Education Slider
 document.addEventListener("DOMContentLoaded", function() {

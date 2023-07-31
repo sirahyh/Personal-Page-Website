@@ -5,19 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
 
-    <!-- Bootatrap -->
+    <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-      crossorigin="anonymous" />
+      crossorigin="anonymous"
+    />
 
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/ionicons.min.css" />
+    <link rel="stylesheet" href="css/style-popup.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mediaqueries.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
   </head>
   <body>
@@ -75,7 +90,6 @@
       <div class="menu-btn"></div>
     </header>
 
-
     <section id="profile">
       <div class="section__pic-container" id="image-container">
         <img src="./img/foto1.jpg" alt="Sitti Rahma profile picture" />
@@ -87,7 +101,8 @@
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/my-resume.pdf')">
+            onclick="window.open('./assets/my-resume.pdf')"
+          >
             Download CV
           </button>
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
@@ -99,12 +114,14 @@
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
-            onclick="location.href='https://www.linkedin.com/in/sitti-rahma-9b719921b/'" />
+            onclick="location.href='https://www.linkedin.com/in/sitti-rahma-9b719921b/'"
+          />
           <img
             src="./assets/github.png"
             alt="My Github profile"
             class="icon"
-            onclick="location.href='https://github.com/'" />
+            onclick="location.href='https://github.com/'"
+          />
         </div>
       </div>
     </section>
@@ -122,7 +139,8 @@
               <img
                 src="./assets/experience.png"
                 alt="Experience icon"
-                class="icon" />
+                class="icon"
+              />
               <h3>Pengalaman</h3>
               <p>1+ tahun <br />Website Development</p>
             </div>
@@ -130,7 +148,8 @@
               <img
                 src="./assets/education.png"
                 alt="Education icon"
-                class="icon" />
+                class="icon"
+              />
               <h3>Pendidikan</h3>
               <p>
                 S1 Teknik Informatika <br />
@@ -153,366 +172,534 @@
     </section>
 
     <div class="konten">
-        <div class="left-bar">
-      
-          <section id="education">
-            <p class="section__text__p1">Latar Belakang</p>
-            <h1 class="title">Pendidikan</h1>
-      
-            <div class="slider-container">
-              <div class="slider">
-                <div class="slide">
-                  <img src="img/kuliah.jpg" alt="Gambar 1">
-                  <div class="caption">Universitas Hasanuddin</div>
-                </div>
-                <div class="slide">
-                  <img src="img/teknik.jpg" alt="Gambar 1">
-                  <div class="caption">Fakultas Teknik</div>
-              </div>
-                  <div class="slide">
-                      <img src="img/sma.jpg" alt="Gambar 1">
-                      <div class="caption">SMA Islam Athirah Bone</div>
-                  </div>
-                  <div class="slide">
-                      <img src="img/smp.jpg" alt="Gambar 2">
-                      <div class="caption">SMP Negeri 2 Barebbo</div>
-                  </div>
-                  <div class="slide">
-                      <img src="img/sd.jpg" alt="Gambar 3">
-                      <div class="caption">SD Inpress 3/77 Watu</div>
-                  </div>
-              </div>
-              <div class="indicators">
-                <span class="indicator" onclick="goToSlide(0)"></span>
-                <span class="indicator" onclick="goToSlide(1)"></span>
-                <span class="indicator" onclick="goToSlide(2)"></span>
-                <span class="indicator" onclick="goToSlide(3)"></span>
-                <span class="indicator" onclick="goToSlide(4)"></span>
-            </div>
-            
-            </div>
-          </section>
-      
-          <section id="experience">
-            <p class="section__text__p1">Explore My</p>
-            <h1 class="title">Pengalaman</h1>
-            <div class="experience-details-container">
-              <div class="about-containers">
-                <div class="details-container">
-                  <h2 class="experience-sub-title">Kerja</h2>
-                  <div class="article-container">
-                    <article>
-                      <img
-                        src="./assets/checkmark.png"
-                        alt="Experience icon"
-                        class="icon" />
-                      <div>
-                        <h3>PT. AERO Nusantara Teknologi</h3>
-                        <p>Developer</p>
-                      </div>
-                    </article>
-                    <article>
-                      <img
-                        src="./assets/checkmark.png"
-                        alt="Experience icon"
-                        class="icon" />
-                      <div>
-                        <h3>Dinas Kominfo</h3>
-                        <p>Website Developer</p>
-                      </div>
-                    </article>
-                    <article>
-                      <img
-                        src="./assets/checkmark.png"
-                        alt="Experience icon"
-                        class="icon" />
-                      <div>
-                        <h3>Virtual Course</h3>
-                        <p>Tutor</p>
-                      </div>
-                    </article>
-                    <article>
-                      <img
-                        src="./assets/checkmark.png"
-                        alt="Experience icon"
-                        class="icon" />
-                      <div>
-                        <h3>CoLearn</h3>
-                        <p>Video Solution Maker</p>
-                      </div>
-                    </article>
-                  </div>
-                </div>
-                <div class="details-container">
-                  <h2 class="experience-sub-title">Organisasi/Skill</h2>
-                  <div class="article-container">
-                    <article>
-                      <img
-                        src="./assets/checkmark.png"
-                        alt="Experience icon"
-                        class="icon" />
-                      <div>
-                        <h3>Peer Mentor</h3>
-                        <p>Mentor</p>
-                      </div>
-                    </article>
-                    <article>
-                      <img
-                        src="./assets/checkmark.png"
-                        alt="Experience icon"
-                        class="icon" />
-                      <div>
-                        <h3>Coder Institude</h3>
-                        <p>Member</p>
-                      </div>
-                    </article>
-                    <article>
-                      <img
-                        src="./assets/checkmark.png"
-                        alt="Experience icon"
-                        class="icon" />
-                      <div>
-                        <h3>Git</h3>
-                        <p>Experienced</p>
-                      </div>
-                    </article>
-                    <article>
-                      <img
-                        src="./assets/checkmark.png"
-                        alt="Experience icon"
-                        class="icon" />
-                      <div>
-                        <h3>HTML/CSS</h3>
-                        <p>Experiented</p>
-                      </div>
-                    </article>
-                    <article>
-                      <img
-                        src="./assets/checkmark.png"
-                        alt="Experience icon"
-                        class="icon" />
-                      <div>
-                        <h3>Javascript</h3>
-                        <p>Experiented</p>
-                      </div>
-                    </article>
-                    <article>
-                      <img
-                        src="./assets/checkmark.png"
-                        alt="Experience icon"
-                        class="icon" />
-                      <div>
-                        <h3>Kotlin</h3>
-                        <p>Intermediate</p>
-                      </div>
-                    </article>
-                  </div>
-                </div>
-              </div>
-            </div>
-           
-          </section>
-      
-          <section id="projects">
-            <p class="section__text__p1">Portofolio</p>
-            <h1 class="title">Projek</h1>
-            <div class="experience-details-container">
-              <div class="about-containers">
-                <div class="details-container color-container">
-                  <div class="article-container">
-                    <img
-                      src="./img/projek_mouvee.png"
-                      alt="Project 1"
-                      class="project-img" />
-                  </div>
-                  <h2 class="experience-sub-title project-title">Mouveeidn</h2>
-                  <div class="btn-container">
-                    <button
-                      class="btn btn-color-2 project-btn"
-                      onclick="window.open('https://github.com/sirahyh/sablon-baju-web', '_blank')">
-                      Github
-                    </button>
-                    <button
-                      class="btn btn-color-2 project-btn"
-                      onclick="window.open('https://www.mouveeidn.com/', '_blank')">
-                      Link Web
-                    </button>
-                  </div>
-                </div>
-                <div class="details-container color-container">
-                  <div class="article-container">
-                    <img
-                      src="./img/projek_lalin.png"
-                      alt="Project 2"
-                      class="project-img" />
-                  </div>
-                  <h2 class="experience-sub-title project-title">Lalin Makassar</h2>
-                  <div class="btn-container">
-                    <button
-                      class="btn btn-color-2 project-btn"
-                      onclick="window.open('https://github.com/sirahyh/WebsiteLalinMakassar', '_blank')">
-                      Github
-                    </button>
-                    <button
-                      class="btn btn-color-2 project-btn"
-                      onclick="window.open('https://lalin.makassarkota.go.id/', '_blank')">
-                      Link Web
-                    </button>
-                  </div>
-                </div>
-                <div class="details-container color-container">
-                  <div class="article-container">
-                    <img
-                      src="./img/projek_tonasa.png"
-                      alt="Project 3"
-                      class="project-img" />
-                  </div>
-                  <h2 class="experience-sub-title project-title">
-                    Unit Konstruksi Tonasa
-                  </h2>
-                  <div class="btn-container">
-                    <button
-                      class="btn btn-color-2 project-btn"
-                      onclick="window.open('https://github.com/Project-Website-Tonasa/Frontend-Website', '_blank')">
-                      Github
-                    </button>
-                    <button
-                      class="btn btn-color-2 project-btn"
-                      onclick="window.open('https://unitworkshopst.com/', '_blank')">
-                      Link Web
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-          </section>
+      <div class="left-bar">
+        <section id="education">
+          <p class="section__text__p1">Latar Belakang</p>
+          <h1 class="title">Pendidikan</h1>
 
-          
-      
-          <!-- AJAX IMPLEMENTATION -->
-         <!-- <div class="AjaxButton">
+          <div class="slider-container">
+            <div class="slider">
+              <div class="slide">
+                <img src="img/kuliah.jpg" alt="Gambar 1" />
+                <div class="caption">Universitas Hasanuddin</div>
+              </div>
+              <div class="slide">
+                <img src="img/teknik.jpg" alt="Gambar 1" />
+                <div class="caption">Fakultas Teknik</div>
+              </div>
+              <div class="slide">
+                <img src="img/sma.jpg" alt="Gambar 1" />
+                <div class="caption">SMA Islam Athirah Bone</div>
+              </div>
+              <div class="slide">
+                <img src="img/smp.jpg" alt="Gambar 2" />
+                <div class="caption">SMP Negeri 2 Barebbo</div>
+              </div>
+              <div class="slide">
+                <img src="img/sd.jpg" alt="Gambar 3" />
+                <div class="caption">SD Inpress 3/77 Watu</div>
+              </div>
+            </div>
+            <div class="indicators">
+              <span class="indicator" onclick="goToSlide(0)"></span>
+              <span class="indicator" onclick="goToSlide(1)"></span>
+              <span class="indicator" onclick="goToSlide(2)"></span>
+              <span class="indicator" onclick="goToSlide(3)"></span>
+              <span class="indicator" onclick="goToSlide(4)"></span>
+            </div>
+          </div>
+        </section>
+
+        <section id="experience">
+          <p class="section__text__p1">Explore My</p>
+          <h1 class="title">Pengalaman</h1>
+          <div class="experience-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <h2 class="experience-sub-title">Kerja</h2>
+                <div class="article-container">
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>PT. AERO Nusantara Teknologi</h3>
+                      <p>Developer</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Dinas Kominfo</h3>
+                      <p>Website Developer</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Virtual Course</h3>
+                      <p>Tutor</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>CoLearn</h3>
+                      <p>Video Solution Maker</p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="details-container">
+                <h2 class="experience-sub-title">Organisasi/Skill</h2>
+                <div class="article-container">
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Peer Mentor</h3>
+                      <p>Mentor</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Coder Institude</h3>
+                      <p>Member</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Git</h3>
+                      <p>Experienced</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>HTML/CSS</h3>
+                      <p>Experiented</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Javascript</h3>
+                      <p>Experiented</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Kotlin</h3>
+                      <p>Intermediate</p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects">
+          <p class="section__text__p1">Portofolio</p>
+          <h1 class="title">Projek</h1>
+          <div class="experience-details-container">
+            <div class="about-containers">
+              <div class="details-container color-container">
+                <div class="article-container">
+                  <img
+                    src="./img/projek_mouvee.png"
+                    alt="Project 1"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">Mouveeidn</h2>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="window.open('https://github.com/sirahyh/sablon-baju-web', '_blank')"
+                  >
+                    Github
+                  </button>
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="window.open('https://www.mouveeidn.com/', '_blank')"
+                  >
+                    Link Web
+                  </button>
+                </div>
+              </div>
+              <div class="details-container color-container">
+                <div class="article-container">
+                  <img
+                    src="./img/projek_lalin.png"
+                    alt="Project 2"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">
+                  Lalin Makassar
+                </h2>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="window.open('https://github.com/sirahyh/WebsiteLalinMakassar', '_blank')"
+                  >
+                    Github
+                  </button>
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="window.open('https://lalin.makassarkota.go.id/', '_blank')"
+                  >
+                    Link Web
+                  </button>
+                </div>
+              </div>
+              <div class="details-container color-container">
+                <div class="article-container">
+                  <img
+                    src="./img/projek_tonasa.png"
+                    alt="Project 3"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">
+                  Unit Konstruksi Tonasa
+                </h2>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="window.open('https://github.com/Project-Website-Tonasa/Frontend-Website', '_blank')"
+                  >
+                    Github
+                  </button>
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="window.open('https://unitworkshopst.com/', '_blank')"
+                  >
+                    Link Web
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- AJAX IMPLEMENTATION -->
+        <!-- <div class="AjaxButton">
             <div id="bottom-section">
               <button id="ajaxButton">Klik untuk Mengambil Data</button>
               <div id="resultText"></div>
             </div>
           </div> -->
-        </div>
+      </div>
 
-        <div class="right-bar">
-          <div class="articles">
-            <p class="section__text__p1">Minat</p>
-            <h1 class="title">Artikel</h1>
+      <div class="right-bar">
+        <div class="articles">
+          <p class="section__text__p1">Minat</p>
+          <h1 class="title">Artikel</h1>
 
-            <div class="pilihan-artikel">
-              <h4>Life Lessons</h4>
-              <p><span>#1 </span><a href="https://jamesclear.com/saying-no" target="_blank"> The Ultimate Productivity Hack is Saying No</a></p>
-              <p><span>#2 </span><a href="https://jamesclear.com/luck-vs-hard-work" target="_blank">Absolute Success is Luck. Relative Success is Hard Work.</a></p>
-              <p><span>#3 </span><a href="https://jamesclear.com/shadow-side" target="_blank">The Shadow Side of Greatness</a></p>
-              <p><span>#4 </span><a href="https://jamesclear.com/personal-values-journal" target="_blank">One Research-Backed Way to Effectively Manage Your Stressful and Busy Schedule</a></p>
-              <p><span>#5 </span><a href="https://jamesclear.com/giving-up" target="_blank">What I Do When I Feel Like Giving Up</a></p>              
-              
-            </div>
-
-            <img src="img/lifelesson-banner.jpg" alt="">
-
-            <div class="pilihan-artikel">
-              <h4>Habits</h4>
-              <p><span>#1 </span><a href="https://jamesclear.com/one-sentence-habits" target="_blank"> 30 One-Sentence Stories From People Who Have Built Better Habits</a></p>
-              <p><span>#2 </span><a href="https://jamesclear.com/behavior-change-paradox" target="_blank">The Paradox of Behavior Change</a></p>
-              <p><span>#3 </span><a href="https://jamesclear.com/temptation-bundling" target="_blank">How to Stop Procrastinating and Boost Your Willpower by Using “Temptation Bundling”</a></p>
-              <p><span>#4 </span><a href="https://jamesclear.com/habits-fail" target="_blank">5 Common Mistakes That Cause New Habits to Fail</a></p>
-              <p><span>#5 </span><a href="https://jamesclear.com/stay-focused" target="_blank">How to Stay Focused When You Get Bored Working Toward Your Goals</a></p>              
-              
-            </div>
-
-            <img src="img/banner-james2.png" alt="">
-
-            <div class="pilihan-artikel">
-              <h4>Habits</h4>
-              <p><span>#1 </span><a href="https://jamesclear.com/beginners-guide-deliberate-practice" target="_blank"> The Beginner Guide to Deliberate Practice</a></p>
-              <p><span>#2 </span><a href="https://jamesclear.com/master-one-thing" target="_blank">The Scientific Argument for Mastering One Thing at a Time</a></p>
-              <p><span>#3 </span><a href="https://jamesclear.com/repeated-bout-effect" target="_blank">If Nothing Changes, Nothing Is Going to Change</a></p>
-              <p><span>#4 </span><a href="https://jamesclear.com/treasure-hunt" target="_blank">The Goal is Not the Point</a></p>
-              <p><span>#5 </span><a href="https://jamesclear.com/plan-failure" target="_blank">Plan For Failure: Being Consistent Is Not the Same as Being Perfect</a></p>              
-              
-            </div>
-
-            <img src="img/ban-self-improvement.jpg" alt="">
-
-            <div class="pilihan-artikel">
-              <h4>Life Lessons</h4>
-              <p><span>#1 </span><a href="https://jamesclear.com/saying-no" target="_blank"> The Ultimate Productivity Hack is Saying No</a></p>
-              <p><span>#2 </span><a href="https://jamesclear.com/luck-vs-hard-work" target="_blank">Absolute Success is Luck. Relative Success is Hard Work.</a></p>
-              <p><span>#3 </span><a href="https://jamesclear.com/shadow-side" target="_blank">The Shadow Side of Greatness</a></p>
-              <p><span>#4 </span><a href="https://jamesclear.com/personal-values-journal" target="_blank">One Research-Backed Way to Effectively Manage Your Stressful and Busy Schedule</a></p>
-              <p><span>#5 </span><a href="https://jamesclear.com/giving-up" target="_blank">What I Do When I Feel Like Giving Up</a></p>              
-              
-            </div>
+          <div class="pilihan-artikel">
+            <h4>Life Lessons</h4>
+            <p>
+              <span>#1 </span
+              ><a href="https://jamesclear.com/saying-no" target="_blank">
+                The Ultimate Productivity Hack is Saying No</a
+              >
+            </p>
+            <p>
+              <span>#2 </span
+              ><a
+                href="https://jamesclear.com/luck-vs-hard-work"
+                target="_blank"
+                >Absolute Success is Luck. Relative Success is Hard Work.</a
+              >
+            </p>
+            <p>
+              <span>#3 </span
+              ><a href="https://jamesclear.com/shadow-side" target="_blank"
+                >The Shadow Side of Greatness</a
+              >
+            </p>
+            <p>
+              <span>#4 </span
+              ><a
+                href="https://jamesclear.com/personal-values-journal"
+                target="_blank"
+                >One Research-Backed Way to Effectively Manage Your Stressful
+                and Busy Schedule</a
+              >
+            </p>
+            <p>
+              <span>#5 </span
+              ><a href="https://jamesclear.com/giving-up" target="_blank"
+                >What I Do When I Feel Like Giving Up</a
+              >
+            </p>
           </div>
-         
-        </div>
 
+          <img src="img/lifelesson-banner.jpg" alt="" />
+
+          <div class="pilihan-artikel">
+            <h4>Habits</h4>
+            <p>
+              <span>#1 </span
+              ><a
+                href="https://jamesclear.com/one-sentence-habits"
+                target="_blank"
+              >
+                30 One-Sentence Stories From People Who Have Built Better
+                Habits</a
+              >
+            </p>
+            <p>
+              <span>#2 </span
+              ><a
+                href="https://jamesclear.com/behavior-change-paradox"
+                target="_blank"
+                >The Paradox of Behavior Change</a
+              >
+            </p>
+            <p>
+              <span>#3 </span
+              ><a
+                href="https://jamesclear.com/temptation-bundling"
+                target="_blank"
+                >How to Stop Procrastinating and Boost Your Willpower by Using
+                “Temptation Bundling”</a
+              >
+            </p>
+            <p>
+              <span>#4 </span
+              ><a href="https://jamesclear.com/habits-fail" target="_blank"
+                >5 Common Mistakes That Cause New Habits to Fail</a
+              >
+            </p>
+            <p>
+              <span>#5 </span
+              ><a href="https://jamesclear.com/stay-focused" target="_blank"
+                >How to Stay Focused When You Get Bored Working Toward Your
+                Goals</a
+              >
+            </p>
+          </div>
+
+          <img src="img/banner-james2.png" alt="" />
+
+          <div class="pilihan-artikel">
+            <h4>Habits</h4>
+            <p>
+              <span>#1 </span
+              ><a
+                href="https://jamesclear.com/beginners-guide-deliberate-practice"
+                target="_blank"
+              >
+                The Beginner Guide to Deliberate Practice</a
+              >
+            </p>
+            <p>
+              <span>#2 </span
+              ><a href="https://jamesclear.com/master-one-thing" target="_blank"
+                >The Scientific Argument for Mastering One Thing at a Time</a
+              >
+            </p>
+            <p>
+              <span>#3 </span
+              ><a
+                href="https://jamesclear.com/repeated-bout-effect"
+                target="_blank"
+                >If Nothing Changes, Nothing Is Going to Change</a
+              >
+            </p>
+            <p>
+              <span>#4 </span
+              ><a href="https://jamesclear.com/treasure-hunt" target="_blank"
+                >The Goal is Not the Point</a
+              >
+            </p>
+            <p>
+              <span>#5 </span
+              ><a href="https://jamesclear.com/plan-failure" target="_blank"
+                >Plan For Failure: Being Consistent Is Not the Same as Being
+                Perfect</a
+              >
+            </p>
+          </div>
+
+          <img src="img/ban-self-improvement.jpg" alt="" />
+
+          <div class="pilihan-artikel">
+            <h4>Life Lessons</h4>
+            <p>
+              <span>#1 </span
+              ><a href="https://jamesclear.com/saying-no" target="_blank">
+                The Ultimate Productivity Hack is Saying No</a
+              >
+            </p>
+            <p>
+              <span>#2 </span
+              ><a
+                href="https://jamesclear.com/luck-vs-hard-work"
+                target="_blank"
+                >Absolute Success is Luck. Relative Success is Hard Work.</a
+              >
+            </p>
+            <p>
+              <span>#3 </span
+              ><a href="https://jamesclear.com/shadow-side" target="_blank"
+                >The Shadow Side of Greatness</a
+              >
+            </p>
+            <p>
+              <span>#4 </span
+              ><a
+                href="https://jamesclear.com/personal-values-journal"
+                target="_blank"
+                >One Research-Backed Way to Effectively Manage Your Stressful
+                and Busy Schedule</a
+              >
+            </p>
+            <p>
+              <span>#5 </span
+              ><a href="https://jamesclear.com/giving-up" target="_blank"
+                >What I Do When I Feel Like Giving Up</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
 
+    <section class="sertifikat">
+      <div class="btn-tambah">
+        <p>
+          <i class="fa-solid fa-plus"></i>
+          <a
+            data-toggle="modal"
+            data-target="#addModalCenter"
+            style="cursor: pointer"
+          >
+            Tambah Sertifikat</a
+          >
+        </p>
+      </div>
+      <table class="table table-bordered">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col" data-column="program">Program</th>
+            <th scope="col" data-column="tahun">Tahun</th>
+            <th scope="col" data-column="penyelenggara">Penyelenggara</th>
+            <th scope="col" data-column="kredensial">Kredensial</th>
+            <th scope="col" data-column="aksi">Aksi</th>
+          </tr>
+        </thead>
+        <tbody id="table-body">
+          <tr>
+            <td class="program"></td>
+            <td class="tahun"></td>
+            <td class="penyelenggara"></td>
+            <td class="kredensial"></td>
+            <td class="aksi"></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
     <section>
       <p class="section__text__p1">Foto Favorit</p>
       <h1 class="title">Galeri Pemandangan</h1>
 
       <div class="gallery">
-      
         <div>
-          <img src="img/galeri/reg1.png" alt="">
+          <img src="img/galeri/reg1.png" alt="" />
         </div>
-  
+
         <div class="v-stretch">
-          <img src="img/galeri/ver2.png" alt="">
+          <img src="img/galeri/ver2.png" alt="" />
         </div>
-  
+
         <div class="h-stretch">
-          <img src="img/galeri/hor1.jpeg" alt="">
+          <img src="img/galeri/hor1.jpeg" alt="" />
         </div>
-  
+
         <div>
-          <img src="img/galeri/reg2.png" alt="">
+          <img src="img/galeri/reg2.png" alt="" />
         </div>
-  
+
         <div>
-          <img src="img/galeri/reg3.png" alt="">
+          <img src="img/galeri/reg3.png" alt="" />
         </div>
-  
+
         <div class="v-stretch">
-          <img src="img/galeri/ver3.png" alt="">
+          <img src="img/galeri/ver3.png" alt="" />
         </div>
-  
+
         <div class="big-stretch">
-          <img src="img/galeri/reg7.png" alt="">
+          <img src="img/galeri/reg7.png" alt="" />
         </div>
-  
+
         <div>
-          <img src="img/galeri/reg4.png" alt="">
+          <img src="img/galeri/reg4.png" alt="" />
         </div>
-  
+
         <div class="h-stretch">
-          <img src="img/galeri/hor2.png" alt="">
+          <img src="img/galeri/hor2.png" alt="" />
         </div>
-  
+
         <div>
-          <img src="img/galeri/reg6.png" alt="">
+          <img src="img/galeri/reg6.png" alt="" />
         </div>
-  
+
         <div>
-          <img src="img/galeri/hor3.png" alt="">
+          <img src="img/galeri/hor3.png" alt="" />
         </div>
-  
+
         <div>
-          <img src="img/galeri/reg8.png" alt="">
+          <img src="img/galeri/reg8.png" alt="" />
         </div>
-  
+
         <div>
-          <img src="img/galeri/reg9.png" alt="">
+          <img src="img/galeri/reg9.png" alt="" />
         </div>
-  
+
         <!-- <div class="v-stretch">
           <img src="img/galeri/v2.png" alt="">
         </div>
@@ -549,9 +736,8 @@
           <img src="img/galeri/r2.png" alt="">
         </div> -->
       </div>
-  
     </section>
-   
+
     <div id="backToTop" onclick="scrollToTop()">&#8593;</div>
     <!-- FOOTER SECTION -->
     <footer>
@@ -606,13 +792,164 @@
             <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
           </div>
         </div>
-
-
       </footer>
     </footer>
 
-    <script src="script.js"></script>
-   
+    <!-- POPUP MODAL SECTION -->
+    <!-- ADD SERTIFIKAT -->
+    <div
+      class="modal fade"
+      id="addModalCenter"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close d-flex align-items-center justify-content-center"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true" class="ion-ios-close"></span>
+            </button>
+          </div>
+          <div class="modal-body p-4 py-5 p-md-5">
+            <h3 class="text-center mb-3">Input Sertifikat</h3>
+
+            <form action="#" class="signup-form">
+              <div class="form-group mb-2">
+                <label for="programAdd">PROGRAM</label>
+                <input type="text" class="form-control" id="programAdd" />
+              </div>
+              <div class="form-group mb-2">
+                <label for="tahunAdd">TAHUN</label>
+                <input type="number" class="form-control" id="tahunAdd" />
+              </div>
+              <div class="form-group mb-2">
+                <label for="penyelenggaraAdd">PENYELENGGARA</label>
+                <input type="text" class="form-control" id="penyelenggaraAdd" />
+              </div>
+              <div class="form-group mb-2">
+                <label for="kredensialAdd">KREDENSIAL</label>
+                <input type="text" class="form-control" id="kredensialAdd" />
+              </div>
+              <div class="form-group mb-2">
+                <button
+                  type="submit"
+                  class="form-control btn btn-primary rounded submit px-3"
+                  id="addBtn"
+                  onclick="closeAddPopup()"
+                >
+                  Kirim
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- EDIT SERTIFIKAT -->
+    <div
+      class="modal fade"
+      id="editModalCenter"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close d-flex align-items-center justify-content-center"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true" class="ion-ios-close"></span>
+            </button>
+          </div>
+          <div class="modal-body p-4 py-5 p-md-5">
+            <h3 class="text-center mb-3">Edit Sertifikat</h3>
+
+            <form action="#" class="signup-form">
+              <div class="form-group mb-2">
+                <label for="programEdit">PROGRAM</label>
+                <input type="text" class="form-control" id="programEdit" />
+              </div>
+              <div class="form-group mb-2">
+                <label for="tahunEdit">TAHUN</label>
+                <input type="number" class="form-control" id="tahunEdit" />
+              </div>
+              <div class="form-group mb-2">
+                <label for="penyelenggaraEdit">PENYELENGGARA</label>
+                <input type="text" class="form-control" id="penyelenggaraEdit" />
+              </div>
+              <div class="form-group mb-2">
+                <label for="kredensialEdit">KREDENSIAL</label>
+                <input type="text" class="form-control" id="kredensialEdit" />
+              </div>
+              <div class="form-group mb-2">
+                <button
+                  type="submit"
+                  class="form-control btn btn-primary rounded submit px-3"
+                  id="editBtn"
+                  onclick="closeEditPopup()"
+                >
+                  Kirim
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DELETE SERTIFIKAT -->
+    <div class="modal fade" id="deleteModal">
+      <div class="modal-dialog">
+       <div class="modal-content">
+        <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+         <span aria-hidden="true">&times;</span>
+         </button>
+        </div>
+        <div class="modal-body">
+         <p>Apakah kamu yakin ingin menghapus data ini?</p>
+       </div>
+       <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" id="close-modal" onclick="closeDeletePopup()">No</button>
+         <button type="button" class="btn btn-danger" id="fixDelete" onclick="closeDeletePopup()">Yes</button>
+        </div>
+       </div>
+      </div>
+     </div>
+
+
+    <!-- SCRIPT JS -->
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+    <script src="js/coba.js"></script>
+
     <script>
       $(document).ready(function () {
         $(".sub-btn").click(function () {

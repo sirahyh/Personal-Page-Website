@@ -1,22 +1,218 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  $("button").click(function(){
-    $.ajax({url: "ajax.txt", success: function(result){
-      $("#div1").html(result);
-    }});
-  });
-});
-</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD Coba</title>
+
+  <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/ionicons.min.css" />
+    <link rel="stylesheet" href="css/style-popup.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mediaqueries.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 </head>
 <body>
+ <h2>Tabel Coba CRUD</h2>
 
-<div id="div1"><h2>Let jQuery AJAX Change This Text</h2></div>
+ <table class="table table-bordered">
+  <thead class="thead-dark">
+    <tr>
+      <!-- <th scope="col" class="program">Program</th>
+        <th scope="col" class="tahun">Tahun</th>
+        <th scope="col" class="penyelenggara">Penyelenggara</th>
+        <th scope="col" class="kredensial">Kredensial</th>
+        <th scope="col" class="aksi">Aksi</th> -->
+      <th scope="col" data-column="program">Program</th>
+      <th scope="col" data-column="tahun">Tahun</th>
+      <th scope="col" data-column="penyelenggara">Penyelenggara</th>
+      <th scope="col" data-column="kredensial">Kredensial</th>
+      <th scope="col" data-column="aksi">Aksi</th>
+    </tr>
+  </thead>
+  <tbody id="table-body">
+    <tr>
+      <td class="program"></td>
+      <td class="tahun"></td>
+      <td class="penyelenggara"></td>
+      <td class="kredensial"></td>
+      <td class="aksi"></td>
+    </tr>
+  </tbody>
+</table>
 
-<button>Get External Content</button>
+<div class="btn-tambah">
+  <p>
+    <i class="fa-solid fa-plus"></i>
+    <a data-toggle="modal" data-target="#editModalCenter" style="cursor: pointer;" id="editPopup">
+      Edit Sertifikat</a
+    >
+  </p>
+</div>
 
+<button type="button" class="btn btn-danger" data-target="#deleteModal" data-toggle="modal">Delete Item</button>
+<!-- Modal -->
+<!-- <div class="modal fade" id="deleteModal">
+ <div class="modal-dialog">
+  <div class="modal-content">
+   <div class="modal-header">
+    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+    </button>
+   </div>
+   <div class="modal-body">
+    <p>Are you sure you want to delete?</p>
+  </div>
+  <div class="modal-footer">
+   <button type="button" class="btn btn-secondary" id="close-modal">No</button>
+    <button type="button" class="btn btn-danger" id="fixDelete">Yes</button>
+   </div>
+  </div>
+ </div>
+</div> -->
+
+<!-- Pop Up -->
+    <!-- <div
+      class="modal fade"
+      id="editModalCenter"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close d-flex align-items-center justify-content-center"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true" class="ion-ios-close"></span>
+            </button>
+          </div>
+          <div class="modal-body p-4 py-5 p-md-5">
+            <h3 class="text-center mb-3">Edit Sertifikat</h3>
+
+            <form action="#" class="signup-form">
+              <div class="form-group mb-2">
+                <label for="programEdit">PROGRAM</label>
+                <input type="text" class="form-control" id="programEdit" />
+              </div>
+              <div class="form-group mb-2">
+                <label for="tahunEdit">TAHUN</label>
+                <input type="number" class="form-control" id="tahunEdit" />
+              </div>
+              <div class="form-group mb-2">
+                <label for="penyelenggaraEdit">PENYELENGGARA</label>
+                <input type="text" class="form-control" id="penyelenggaraEdit" />
+              </div>
+              <div class="form-group mb-2">
+                <label for="kredensialEdit">KREDENSIAL</label>
+                <input type="text" class="form-control" id="kredensialEdit" />
+              </div>
+              <div class="form-group mb-2">
+                <button
+                  type="submit"
+                  class="form-control btn btn-primary rounded submit px-3"
+                  id="editBtn"
+                >
+                  Kirim
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div> -->
+<!-- <div
+class="modal fade"
+id="addModalCenter"
+tabindex="-1"
+role="dialog"
+aria-labelledby="exampleModalCenterTitle"
+aria-hidden="true"
+>
+<div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button
+        type="button"
+        class="close d-flex align-items-center justify-content-center"
+        data-dismiss="modal"
+        aria-label="Close"
+      >
+        <span aria-hidden="true" class="ion-ios-close"></span>
+      </button>
+    </div>
+    <div class="modal-body p-4 py-5 p-md-5">
+      <h3 class="text-center mb-3">Input Sertifikat</h3>
+
+      <form action="#" class="signup-form">
+        <div class="form-group mb-2">
+          <label for="programAdd">PROGRAM</label>
+          <input type="text" class="form-control" id="programAdd"/>
+        </div>
+        <div class="form-group mb-2">
+          <label for="tahunAdd">TAHUN</label>
+          <input type="number" class="form-control" id="tahunAdd"/>
+        </div>
+        <div class="form-group mb-2">
+          <label for="penyelenggaraAdd">PENYELENGGARA</label>
+          <input type="text" class="form-control" id="penyelenggaraAdd"/>
+        </div>
+        <div class="form-group mb-2">
+          <label for="kredensialAdd">KREDENSIAL</label>
+          <input type="text" class="form-control" id="kredensialAdd"/>
+        </div>
+        <div class="form-group mb-2">
+          <button
+            type="submit"
+            class="form-control btn btn-primary rounded submit px-3"
+            id="addBtn"
+          >
+            Kirim
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</div> -->
+
+<script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+<script src="js/coba.js"></script>
 </body>
 </html>
