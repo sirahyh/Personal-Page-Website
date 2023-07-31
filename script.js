@@ -65,4 +65,19 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-// side-bar
+// Btn BackToTop
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
+// Tampilkan Back to Top button ketika pengguna menggulir halaman ke bawah
+window.onscroll = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("backToTop").style.display = "block";
+    } else {
+        document.getElementById("backToTop").style.display = "none";
+    }
+};
