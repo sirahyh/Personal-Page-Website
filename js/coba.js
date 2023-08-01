@@ -164,7 +164,6 @@ function deleteClick(id){
 // Close Popup
 function closeAddPopup() {
   $("#addModalCenter").modal('hide');
-
 }
 
 function closeEditPopup() {

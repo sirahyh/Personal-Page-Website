@@ -810,18 +810,19 @@ form .form-group button .submitBtn{
   font-size: 24px;
   line-height: 50px;
   cursor: pointer;
+  z-index: 3;
 }
 
 /* Footer */
 footer{
-  z-index: 999;
-  /* position: fixed; */
-  bottom: 0;
+  z-index: 2;
+  position: relative;
+  bottom: -550px;
   left: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   background: #23252B;
   box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
   padding: 0 100px;
@@ -1050,8 +1051,12 @@ footer {
   margin-top: 30px;
 }
 
+
 @media (max-width: 880px) {
 
+  footer{
+    bottom: 0;
+  }
 	.footer-distributed{
 		font: bold 14px sans-serif;
 	}
@@ -1061,7 +1066,7 @@ footer {
 	.footer-distributed .footer-right{
 		display: block;
 		width: 100%;
-		margin-bottom: 40px;
+		margin-bottom: 0px;
 		text-align: center;
 	}
 
@@ -1071,7 +1076,45 @@ footer {
 
 }
 
+@media (max-width: 1500px){
+  footer{
+    bottom: -700px;
+  }
+}
+
+@media (max-width: 1729px){
+  footer{
+    bottom: -900px;
+  }
+}
+@media (max-width: 1600px){
+  footer{
+    bottom: -900px;
+  }
+}
+
+@media (max-width: 1469px){
+  footer{
+    bottom: -1400px;
+  }
+}
+
+@media (max-width: 1209px){
+  footer{
+    bottom: -2150px;
+  }
+}
+
+@media (max-width: 1200px){
+  footer{
+    bottom: -50px;
+  }
+}
+
 @media (max-width: 1060px){
+  footer{
+    bottom: 0;
+  }
     header .navigation .menu{
         position: fixed;
         display: block;
